@@ -1,0 +1,60 @@
+---
+layout: page
+title: Contact
+permalink: /contact/
+---
+
+<style>
+    /* Style the form container */
+    form {
+        display: flex;
+        flex-direction: column;
+        max-width: 500px; /* Limit width */
+        margin: 20px auto; /* Center horizontally */
+        align-items: center;
+    }
+
+    /* Style inputs and textarea */
+    input, textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+        border: 1px solid #ddd; /* Light gray border */
+        border-radius: 5px; /* Rounded edges */
+        font-size: 16px;
+    }
+
+    textarea {
+        resize: vertical; /* Allow resizing only vertically */
+        min-height: 100px;
+    }
+
+    /* Style the submit button */
+    button {
+        display: block;  /* Ensures button behaves like a block-level element */
+        width: 100%;     /* Forces button to take up full width */
+        background-color: #333; /* Dark color (Minima theme) */
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        text-align: center; /* Ensure text is centered */
+    }
+
+    button:hover {
+        background-color: #555; /* Slightly lighter hover effect */
+    }
+</style>
+
+<form action="https://formsubmit.co/{{ site.authors[0].contacts.email }}" method="POST">
+   <input type="hidden" name="_cc" value="{% for author in site.authors offset:1 %}{{ author.contacts.email }}{% if forloop.last == false %},{% endif %}{% endfor %}">
+   <input type="hidden" name="_next" value="{{ site.url }}/contact/">
+
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" required></textarea>
+
+    <button type="submit">Send</button>
+</form>

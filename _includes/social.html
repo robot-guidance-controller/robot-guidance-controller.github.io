@@ -1,0 +1,23 @@
+<ul class="social-media-list">
+  {%- assign author = site.authors | where: "name", include.author_name | first -%}
+  
+  {%- if author -%}
+    <li><strong>{{ author.name }}</strong></li>
+    
+    {%- for entry in author.contacts %}
+      {%- assign platform = entry[0] -%}
+      {%- assign username = entry[1] -%}
+
+      {%- if platform == "email" -%}
+        <li><a href="mailto:{{ username }}"><span class="username">{{ username }}</span></a></li>
+      
+      {%- elsif platform == "github" -%}
+        <li><a href="https://github.com/{{ username }}">
+          <svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}"></use></svg> 
+          <span class="username">{{ username }}</span></a>
+        </li>
+      
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endif -%}
+</ul>
