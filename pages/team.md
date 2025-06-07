@@ -26,6 +26,12 @@ permalink: /team/
         </td>
         <td style="vertical-align:top; background-color: #f5f5f5;">
                 <figure>
+                    <img src="/assets/images/team/tomas.png" alt="" width="100%" style="border-radius: 60%;">
+                    <figcaption style="text-align: center;">Tomás Lozano-Pérez<br/> <span style="font-size:medium; font-weight:normal; font-style: italic;">MIT EECS</span></figcaption>
+                </figure>
+        </td>
+        <td style="vertical-align:top; background-color: #f5f5f5;">
+                <figure>
                     <img src="/assets/images/team/paolo.jpg" alt="" width="100%" style="border-radius: 60%;">
                     <figcaption style="text-align: center;">Paolo Bonato<br/> <span style="font-size:medium; font-weight:normal; font-style: italic;">Harvard Medical School and Spaulding Rehabilitation Hospital</span></figcaption>
                 </figure>
