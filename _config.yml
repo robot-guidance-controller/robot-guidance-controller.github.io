@@ -48,8 +48,7 @@ plugins:
 #   - vendor/ruby/
 
 header_pages:
-  - pages/demo.md
-  - pages/framework.md
+  - pages/controller.md
   - pages/observational_data.md
   - pages/results.md
   - pages/paper.md
