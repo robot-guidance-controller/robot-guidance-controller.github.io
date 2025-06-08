@@ -49,9 +49,10 @@ plugins:
 
 header_pages:
   - pages/controller.md
-  - pages/observational_data.md
+  - pages/observational_study.md
   - pages/results.md
   - pages/paper.md
+  - pages/exhibit.md
   - pages/team.md
   - pages/contact.html
 
