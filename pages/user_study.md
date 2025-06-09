@@ -22,7 +22,7 @@ Each user interacted with each of the following guidance methods through multipl
 
 ## Videos
 
-(NOTE: Does not render correctly on Safari, please use Google Chrome.)
+(NOTE: May possibly not render correctly on Safari, please use Google Chrome.)
 
 <!-- {% assign baselines = "1_language_only,2_physical_only,3_baseline,4_ours" | split: "," %}
 
