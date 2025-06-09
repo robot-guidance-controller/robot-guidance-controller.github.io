@@ -20,7 +20,7 @@ permalink: /observational-study/
     <br>
     <br>
     <video class="video-js" style="display:block;width:100%;" controls preload="auto">
-        <source src="/assets/videos/observational_study_trials/1_reference_trajectory.mp4" type="video/mp4">
+        <source src="/assets/videos/observational_study_trials/1_reference_trajectory.webm" type="video/webm">
     </video>
     <br>
   </li>
@@ -31,7 +31,7 @@ permalink: /observational-study/
     <br>
     <br>
     <video class="video-js" style="display:block;width:100%;" controls preload="auto">
-        <source src="/assets/videos/observational_study_trials/2_verbal_only.mp4" type="video/mp4">
+        <source src="/assets/videos/observational_study_trials/2_verbal_only.webm" type="video/webm">
     </video>
     <br>
   </li>
@@ -42,7 +42,7 @@ permalink: /observational-study/
     <br>
     <br>
     <video class="video-js" style="display:block;width:100%;" controls preload="auto">
-        <source src="/assets/videos/observational_study_trials/3_physical_only.mp4" type="video/mp4">
+        <source src="/assets/videos/observational_study_trials/3_physical_only.webm" type="video/webm">
     </video>
     <br>
   </li>
@@ -54,11 +54,11 @@ permalink: /observational-study/
     <br>
     <br>
     <video class="video-js" style="display:block;width:100%;" controls preload="auto">
-        <source src="/assets/videos/observational_study_trials/4_combined_guidance_1.mp4" type="video/mp4">
+        <source src="/assets/videos/observational_study_trials/4_combined_guidance_1.webm" type="video/webm">
     </video>
     <br>
     <video class="video-js" style="display:block;width:100%;" controls preload="auto">
-        <source src="/assets/videos/observational_study_trials/4_combined_guidance_2.mp4" type="video/mp4">
+        <source src="/assets/videos/observational_study_trials/4_combined_guidance_2.webm" type="video/webm">
     </video>
     <br>
   </li>
