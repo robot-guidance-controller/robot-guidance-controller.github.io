@@ -4,21 +4,14 @@ title: Controller
 permalink: /controller/
 ---
 
-## System Architecture
-
-<figure>
-    <img src="/assets/images/figures/main_figure.png" alt="Main Figure" width="100%">
-    <figcaption style="text-align: center;"><br/>Visual summary of the Robot Guidance Controller for optimal physical and verbal guidance. Expert-led demonstrations generate reference trajectories, and inform module design and parameters. The Trajectory Planner outputs desired motion, while a Bayesian Compliance Estimator infers human receptiveness to different guidance modalities in real time. Based on these estimates, the Optimization Method dynamically allocates guidance effort between physical forces and verbal instructions. The Robot Guidance Controller enables a closed-loop feedback system that provides contextually appropriate, multimodal guidance, enabling real-time adaptive human-robot interaction.</figcaption>
-</figure>
-
-## Block Diagram
+## Control Diagram
 
 <figure>
     <img src="/assets/images/figures/guidance_controller_low_level_no_residual.png" alt="Block Diagram" width="100%">
     <figcaption style="text-align: center;"><br/>Control loop of our Robot Guidance Controller. The diagram illustrates how position and velocity tracking errors ($e$, $\dot{e}$) are processed through parallel physical and verbal PD controllers with dedicated gain parameters ($K_p$, $B_p$, $K_v$, $B_v$). The optimization method ($J$) uses compliance estimates to determine appropriate variable admittance gains ($A_p$, $A_v$) that modulate the physical guidance control input ($U_p$) and verbal guidance control input ($U_v$). These gains continuously adapt to the variable human impedance ($Z_h$) and human cognitive reaction ($\mathcal{H}$), with verbal inputs converted to instructional utterances ($\sigma$) through a Force-to-Language (F2L) model that accounts for varying levels of human receptiveness.</figcaption>
 </figure>
 
-## Controller Algorithm
+## Algorithm
 
 **Algorithm: Robot Guidance Controller**
 
