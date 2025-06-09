@@ -22,7 +22,7 @@ Each user interacted with each of the following guidance methods through multipl
 
 ## Videos
 
-(Note: does not render correctly on Safari, please use Google Chrome.)
+(NOTE: Does not render correctly on Safari, please use Google Chrome.)
 
 <!-- {% assign baselines = "1_language_only,2_physical_only,3_baseline,4_ours" | split: "," %}
 
@@ -62,8 +62,6 @@ Each user interacted with each of the following guidance methods through multipl
 
 {% assign baselines_raw = "1_language_only,2_physical_only,3_baseline,4_ours" | split: "," %}
 {% assign baseline_labels = "Language Only,Physical Only,Baseline Method,Our Method" | split: "," %}
-
-<h1>User Study Videos</h1>
 
 {% for user_id in (0..11) %}
 ### User {{ user_id }}
