@@ -11,8 +11,10 @@ When human instructors guide learners through motor tasks, they seamlessly coord
 
 ## Demo
 
+Here we have a user interact with the Robot Guidance Controller, and they were asked to be compliant to verbal cues while also being noncompliant to physical gestures. The Robot Guidance Controller adjusts its guidance strategy to the user real time to account for the discrepancy in compliance, and ultimately still manages to complete the task.
+
 <video class="video-js" style="display:block;width:100%;" controls preload="auto">
-    <source src="/assets/videos/user_study/4_ours/0_P=0,V=0_edited.mp4" type="video/mp4">
+    <source src="/assets/videos/user_study/4_ours/0_P=0,V=1_edited.mp4" type="video/mp4">
 </video>
 (NOTE: May possibly not render correctly on Safari, please use Google Chrome.)
 <br>
