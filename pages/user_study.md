@@ -61,7 +61,7 @@ Each user interacted with each of the following guidance methods through multipl
 {% endfor %} -->
 
 {% assign baselines_raw = "1_language_only,2_physical_only,3_baseline,4_ours" | split: "," %}
-{% assign baseline_labels = "Language Only,Physical Only,Baseline Method,Our Method" | split: "," %}
+{% assign baseline_labels = "Language Only,Physical Only,Fixed-Gain Baseline,Robot Guidance Controller (Our Method)" | split: "," %}
 
 {% for user_id in (0..11) %}
 ### User {{ user_id }}
@@ -72,7 +72,7 @@ Each user interacted with each of the following guidance methods through multipl
   {% assign baseline = baselines_raw[baseline_index] %}
   {% assign baseline_label = baseline_labels[baseline_index] %}
 
-**Baseline: {{ baseline_label }}**
+**Method: {{ baseline_label }}**
 
 <div style="display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.5rem;">
   {% assign baseline_path = "assets/videos/user_study/" | append: baseline %}

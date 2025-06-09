@@ -50,11 +50,18 @@ We evaluated our methods using the following metrics:
     <figcaption style="text-align: center;"><br/>Performance of verbal-only (green), physical-only (blue), and combined guidance (orange) across varying compliance regimes. Each subplot shows a different evaluation metric: position error (top left), velocity error (top right), velocity smoothness (bottom left), and task completion time (bottom right). Bars are grouped by compliance condition: single-modality conditions (first and second clusters) and combined-modality conditions under all four combinations of physical (P) and verbal (V) compliance (third cluster). Error bars indicate 95\% confidence intervals. Statistically significant differences are marked with standard notation (* \(p < 0.05\), ** \(p < 0.01\), *** \(p < 0.001\), **** \(p < 0.0001\), ns = not significant). Results show that performance improves with compliance, and combining modalities helps most when one is ignored—allowing the other to compensate.</figcaption>
 </figure>
 
-<strong>Our method achieves superior task completion than the simple baseline method:</strong>
+<strong>Our method achieves superior task completion than the fixed-gain baseline method:</strong>
 
 <figure>
     <img src="/assets/images/figures/results_overall_B1_vs_ours.png" alt="Results Overall Baseline 1 vs. Our Method" width="100%">
     <figcaption style="text-align: center;"><br/>Comparison between our adaptive Robot Guidance Controller (red) and the fixed-weight baseline controller (orange) across all four compliance regimes. Each subplot presents a separate evaluation metric: position error (top left), velocity error (top right), velocity smoothness (bottom left), and task completion time (bottom right). Bars are grouped by compliance condition: combinations of physical (P) and verbal (V) compliance ranging from full noncompliance (P=0, V=0) to full compliance (P=1, V=1). Error bars indicate 95\% confidence intervals. Statistical significance is marked above each pairwise comparison (* \(p < 0.05\), ** \(p < 0.01\), **** \(p < 0.0001\), ns = not significant). Our method outperforms the baseline in low-compliance regimes, where adaptive reallocation of guidance helps compensate for unattended modalities; differences taper under full compliance as both methods converge near ceiling performance.</figcaption>
+</figure>
+
+<strong>Our method enacted guidance matching the therapist's guidance style:</strong>
+
+<figure>
+    <img src="/assets/images/figures/results_overall_therapist.png" alt="Results Overall Therapist" width="100%">
+    <figcaption style="text-align: center;"><br/>Comparison of robot behavior under the baseline method (orange), our method (red), and the expert therapist from the observational study (gray) across all compliance regimes. Subplots report: normalized median robot force (left), mean speaking frequency (top right), and the mean ratio of instructional to encouraging words (bottom). Bars are grouped by compliance level, with physical (P) and verbal (V) compliance levels annotated below each cluster. Error bars indicate 95\% confidence intervals. Statistical significance is marked above each pairwise comparison (* p < 0.05, ** p < 0.01, **** p < 0.0001, ns = not significant). Our method reproduces therapist-like speech behavior more consistently than the baseline, particularly in both speaking frequency and directive balance, while force levels remain comparable across methods.</figcaption>
 </figure>
 
 <strong>A snippet deep diving into the real-time interaction between a user and our method:</strong>
