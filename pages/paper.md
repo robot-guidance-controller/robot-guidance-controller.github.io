@@ -4,7 +4,7 @@ title: Paper
 permalink: /paper/
 ---
 
-The paper is currently under review.
+The paper is currently under review in Nature Portfolio.
 
-<iframe src="" type="application/pdf" width="100%" height="1000px"> 
+<iframe src="/assets/documents/paper.pdf" type="application/pdf" width="100%" height="1000px"> 
 </iframe>
