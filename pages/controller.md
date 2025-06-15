@@ -138,5 +138,5 @@ $$
    $$
 
    $$
-   M \ddot{x} + B \dot{x} = U_p + F_h
+   \text{Update Dynamics } M \ddot{x} + B \dot{x} = U_p + F_h
    $$
